@@ -39,3 +39,5 @@ set1.update(set2)
 set3 = set1.union(set2)
 print(set1)
 print(set3)
+
+# just for fun
