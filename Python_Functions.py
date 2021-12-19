@@ -53,3 +53,49 @@ sum()
 sum("texus")
 
 print("country name is", sum(num1))
+
+# Passing a List as an Argument
+def fruit(food):
+    for x in food:
+        print(x)
+
+
+name = ["apple", "banana", "guava"]
+fruit(name)
+
+# Passing a tupple as an Argument
+def fruit(food):
+    for x in food:
+        print(x)
+
+
+name = ("apple", "banana", "guava")
+fruit(name)
+
+# recursion
+def my_rec(k):
+    if k > 0:
+        print(k)
+        result = k + my_rec(k - 1)
+        print(result)
+    else:
+        result = 0
+    return result
+
+
+print("recursion example result")
+my_rec(6)
+
+# first n natural number
+def my_nat(x):
+    if x > 0:
+        sum = x + my_nat(x - 1)
+        return sum
+    else:
+        sum = 0
+        return sum
+
+
+print("sum of n number is")
+a = int(input("enter number"))
+print("sum of the number is:", my_nat(a))
