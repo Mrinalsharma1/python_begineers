@@ -96,6 +96,5 @@ def my_nat(x):
         return sum
 
 
-print("sum of n number is")
 a = int(input("enter number"))
 print("sum of the number is:", my_nat(a))
