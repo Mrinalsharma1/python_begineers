@@ -15,20 +15,20 @@ p1 = myclass()
 print(p1.x)
 
 # creat a class
-# class vicle:
-#     att1 = "bmw"
-#     att2 = "Tata"
+class vicle:
+    att1 = "bmw"
+    att2 = "Tata"
 
-#     def myfun(self, a, b):
-#         print(a, self.att1)
-#         print(b, self.att2)
+    def myfun(self, a, b):
+        print(a, self.att1)
+        print(b, self.att2)
 
 
-# x = str(input("enter your name  "))
-# y = int(input("enter your age  "))
-# obj1 = vicle()
-# # print(obj1)
-# obj1.myfun(x, y)
+x = str(input("enter your name  "))
+y = int(input("enter your age  "))
+obj1 = vicle()
+# print(obj1)
+obj1.myfun(x, y)
 
 # A Sample class with init method
 class person:
