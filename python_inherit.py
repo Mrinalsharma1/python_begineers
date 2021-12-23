@@ -33,3 +33,25 @@ class wild(animal):
 obj = wild()
 obj.bird()
 obj.ani()
+
+# multiple inheritance
+class animal:
+    def speak(self):
+        print("animal is speaking")
+
+
+class dog(animal):
+    def bark(self):
+        print("this is dog")
+
+
+class cat(dog):
+    def run(self):
+        print("this is cat")
+
+
+obj1 = cat()
+print(" ******  multiple inheritance is there   ******")
+obj1.speak()
+obj1.bark()
+obj1.run()
