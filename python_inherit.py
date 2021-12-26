@@ -55,3 +55,38 @@ print(" ******  multiple inheritance is there   ******")
 obj1.speak()
 obj1.bark()
 obj1.run()
+
+# use init() function in base class
+
+
+class person:
+    def __init__(self, fname, lname):
+        self.name = fname
+        self.sname = lname
+
+    def printkro(self):
+        print(self.name, self.sname, self.age)
+
+    def printkro1(self):
+        print(self.name, self.sname)
+
+
+class c1(person):
+    def __init__(self, fname, lname, age):
+        person.__init__(self, fname, lname)
+        self.age = age
+
+
+class c2(person):
+    def __init__(
+        self,
+        fname,
+        lname,
+    ):
+        super().__init__(fname, lname)
+
+
+obj1 = c1("mrinal", "kumar", "2000")
+obj2 = c2("sagar", "sharma")
+obj1.printkro()
+obj2.printkro1()
