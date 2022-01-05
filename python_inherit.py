@@ -90,3 +90,28 @@ obj1 = c1("mrinal", "kumar", "2000")
 obj2 = c2("sagar", "sharma")
 obj1.printkro()
 obj2.printkro1()
+
+# Python code to demonstrate how parent constructors
+
+# parents class --
+class person(object):
+    # python constructer
+    def __init__(self, name, idnumber):
+        self.name = name
+        self.idnumber = idnumber
+
+    def display(self):
+        print(self.name)
+        print(self.idnumber)
+
+
+class employee(person):
+    def __init__(self, name, idnumber, salary, post):
+        self.salary = salary
+        self.post = post
+
+        person.__init__(self, name, idnumber)
+
+
+a = employee("rahul", 84565, 30000, "developer")
+a.display()
